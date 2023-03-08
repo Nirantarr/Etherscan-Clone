@@ -2,7 +2,6 @@ import React,{useState,useEffect,useContext} from 'react'
 import {FaFilter} from 'react-icons/fa';
 import Transaction from './Transaction';
 import Internal from './Internal';
-import BlockRange from './BlockRange';
 import MinedBlock from './MinedBlock';
 import Erc20Token from './Erc20Token';
 import Erc721Token from './Erc721Token';
@@ -103,11 +102,7 @@ const Table = ({AccountData,accountHistory,internalByAddress,blockMinedByAddress
      ):(
       ""
      )}
-     {transactionRangeBlock?(
-     <BlockRange handleClick={AccountData} blockRangeTransaction={blockRangeTransaction} />
-     ):(
-      ""
-     )}
+     
 
      { openErc20? <Erc20Token erc20={erc20} handleClick={AccountData} />:""}
      { openErc721? <Erc721Token erc721={erc721} handleClick={AccountData} />:""}
