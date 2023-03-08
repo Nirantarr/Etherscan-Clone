@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
-import Image from 'next/Image';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { ethers } from 'ethers';
 import Style from '../styles/account.module.css';
