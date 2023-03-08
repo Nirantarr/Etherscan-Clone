@@ -6,7 +6,7 @@ import { RiSendPlaneFill } from "react-icons/ri";
 import Style from "./index.module.css";
 import { Etherescan } from "context/Etherscan";
 import etherlogo from 'Images/Ethlogo.jpg';  
-import Image from "next/Image";
+import Image from "next/image";
 
  const Home = () => {
   const router = useRouter();
