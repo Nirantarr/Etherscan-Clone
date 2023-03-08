@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/Image';
+import Image from 'next/image';
 import {RiSendPlaneFill} from 'react-icons/ri';
 import {TiSocialTwitter, TiSocialFacebook, TiSocialLinkedin, TiSocialInstagram} from 'react-icons/ti';
 import Style from './style/Footer.module.css';
