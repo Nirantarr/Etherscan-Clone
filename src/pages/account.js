@@ -24,7 +24,7 @@ const account = () => {
   const [erc20, seterc20] = useState([]);
   const [erc721, seterc721] = useState([]);
   const [erc1155, seterc1155] = useState([]);
-  const API_KEY = "TX842WKJ5EBBPRREXCEVF66RUQCV9VJ1U2";
+  const API_KEY = "xxxxxxxxxxxxxxxxxxxxxx";
 
   const { provider } = useContext(Etherescan);
   const router = useRouter();
