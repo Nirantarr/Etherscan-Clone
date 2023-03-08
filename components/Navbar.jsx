@@ -25,7 +25,8 @@ const Navbar = () => {
  
   
   const GetEtherPrice = async () => {
-    const Ether_Api_key="TX842WKJ5EBBPRREXCEVF66RUQCV9VJ1U2";
+//    api key removed
+    const Ether_Api_key="xxxxxxxxxxxxxxxxxxxxxxxxxx";
     try { 
       axios.get(`https://api.etherscan.io/api?module=stats&action=ethprice&apikey=${Ether_Api_key}`).then((response) => {
         // console.log(response.data.result);
