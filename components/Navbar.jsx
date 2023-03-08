@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react'
-import Image from 'next/Image';
+import Image from 'next/image';
 import axios from 'axios';
 import Link from 'next/link';
 import Style from './style/Navbar.module.css';
