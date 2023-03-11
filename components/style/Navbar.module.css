@@ -50,7 +50,7 @@ cursor: pointer;
     /* cursor: pointer; */
     padding: .5rem;
 }
-.connected button{
+.navbar_container_right button{
     /* width: 40%; */
     border: 1px solid black;
     border-radius: .2rem;
@@ -199,6 +199,12 @@ cursor: pointer;
     }
     .back{
   width: 20%;
+    }
+    .img1{
+     display: none;
+    }
+    .tbchart{
+        display: none;
     }
 
 
