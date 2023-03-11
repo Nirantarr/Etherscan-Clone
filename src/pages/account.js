@@ -6,7 +6,6 @@ import { ethers } from 'ethers';
 import Style from '../styles/account.module.css';
 import { Etherescan } from 'context/Etherscan';
 import Ethlogo from 'Images/Ethlogo.jpg';
-import loader from 'Images/Settings.gif';
 import Table from 'components/Table';
 
 const account = () => {
@@ -24,7 +23,7 @@ const account = () => {
   const [erc20, seterc20] = useState([]);
   const [erc721, seterc721] = useState([]);
   const [erc1155, seterc1155] = useState([]);
-  const API_KEY = "xxxxxxxxxxxxxxxxxxxxxx";
+  const API_KEY = "TX842WKJ5EBBPRREXCEVF66RUQCV9VJ1U2";
 
   const { provider } = useContext(Etherescan);
   const router = useRouter();
@@ -111,9 +110,10 @@ const account = () => {
     ) : (
       <div>
         {loading ? (
-          <div className={Style.loading}>
-            <Image src={loader} alt="loading" width={100} height={100} />
-          </div>
+          // <div className={Style.loading}>
+          //   <Image src={loader} alt="loading" width={100} height={100} />
+          // </div>
+          <div className={Style.loader}></div>
         ) : (
           ""
         )}
@@ -122,9 +122,9 @@ const account = () => {
           <div className={Style.container}>
             <div className={Style.box}>
               <div className={Style.account}>
-                <Image src={Ethlogo} alt="logo" width={30} height={30} />
+                <Image  className={Style.img1} src={Ethlogo} alt="logo" width={30} height={30} />
                 <p>
-                  Address: <span>{acc}</span>
+                  Address: {acc}
                 </p>
               </div>
               <div className={Style.owner}>
@@ -136,7 +136,7 @@ const account = () => {
             <div className={Style.overviewBox}>
               <div className={Style.overview}>
                 <div className={Style.overviewTitle}>
-                  <p>Overview</p>
+                  <p className={Style.overview1}> Overview</p>
                   <p className={Style.miner}>
                     {name || "Miner"}:&nbsp; {acc}
                   </p>
