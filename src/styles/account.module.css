@@ -1,3 +1,78 @@
+.loader {
+    position: relative;
+    width: 4.5em;
+    height: 4.5em;
+    transform: rotate(165deg);
+   }
+   
+   .loader:before, .loader:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%);
+   }
+   
+   .loader:before {
+    animation: before8 2s infinite;
+   }
+   
+   .loader:after {
+    animation: after6 2s infinite;
+   }
+   
+   @keyframes before8 {
+    0% {
+     width: 0.5em;
+     box-shadow: 1em -0.5em rgba(150, 24, 72, 0.75), -1em 0.5em rgba(21, 106, 122, 0.75);
+    }
+   
+    35% {
+     width: 2.5em;
+     box-shadow: 0 -0.5em rgba(150, 24, 72, 0.75), 0 0.5em rgba(21, 106, 122, 0.75);
+    }
+   
+    70% {
+     width: 0.5em;
+     box-shadow: -1em -0.5em rgba(150, 24, 72, 0.75), 1em 0.5em rgba(21, 106, 122, 0.75);
+    }
+   
+    100% {
+     box-shadow: 1em -0.5em rgba(34, 9, 18, 0.75), -1em 0.5em rgba(21, 106, 122, 0.75);
+    }
+   }
+   
+   @keyframes after6 {
+    0% {
+     height: 0.5em;
+     box-shadow: 0.5em 1em rgba(7, 104, 15, 0.75), -0.5em -1em rgba(16, 20, 83, 0.75);
+    }
+   
+    35% {
+     height: 2.5em;
+     box-shadow: 0.5em 0 rgba(7, 104, 15, 0.75), -0.5em 0 rgba(16, 20, 83, 0.75);
+    }
+   
+    70% {
+     height: 0.5em;
+     box-shadow: 0.5em -1em rgba(7, 104, 15, 0.75), -0.5em 1em rgba(16, 20, 83, 0.75);
+    }
+   
+    100% {
+     box-shadow: 0.5em 1em rgba(7, 104, 15, 0.75), -0.5em -1em rgba(16, 20, 83, 0.75);
+    }
+   }
+   
+   .loader {
+    position: absolute;
+    top: calc(50% - 1.25em);
+    left: calc(50% - 1.25em);
+   }
+ 
  .accountDIV{
     width:95%;
     margin: 0 auto;
@@ -152,13 +227,26 @@
         margin-left: 0;
     }
     .account{
-        flex-direction: column;
+        /* flex-direction: column; */
         padding-top: 1rem;
         gap: 0;
+        text-align: center;
+        /* justify-content: center; */
+       
+    }
+    .img1{
+        display: block;
+        position: relative;
+        bottom:2rem;
+        left:9rem;
     }
     .account p{
          margin-top: 1rem;
          text-align: center;
+         margin-left: -3rem;
+         width: 100%;
+         /* border: 1px solid grey; */
+         /* padding: 1rem 0; */
     }
     .owner{
         padding-inline: 2rem;
@@ -171,5 +259,30 @@
     .branding{
         justify-content: center;
         text-align: center;
+    }
+    .accountBalance p{
+        display: flex; 
+         justify-content: space-between;
+         margin-right: 8rem;
+    }
+    .accountValue{
+        margin-right: 11rem;
+        justify-content: space-between;
+    }
+   
+    .overview1{
+       display: none;
+    }
+    .miner{
+     position: relative;
+     right: 10rem;
+     width: 30%;
+     border:none;
+    }
+    .branding{
+        text-align: center;
+        position: relative;
+        /* right: 3rem; */
+        width: 70%;
     }
 }
