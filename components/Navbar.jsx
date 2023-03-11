@@ -26,7 +26,7 @@ const Navbar = () => {
   
   const GetEtherPrice = async () => {
 //    api key removed
-    const Ether_Api_key="xxxxxxxxxxxxxxxxxxxxxxxxxx";
+    const Ether_Api_key="TX842WKJ5EBBPRREXCEVF66RUQCV9VJ1U2";
     try { 
       axios.get(`https://api.etherscan.io/api?module=stats&action=ethprice&apikey=${Ether_Api_key}`).then((response) => {
         // console.log(response.data.result);
@@ -133,7 +133,7 @@ const Navbar = () => {
               <h1>ETHER PRICE</h1>
               <p> $ {etherPrice}</p>
               <p>Btc {etherPriceBtc}</p>
-              <p>{updatedPriceDate}</p>
+             
             </div>
           </div>
           <div className={Style.supplyEther}>
@@ -144,7 +144,7 @@ const Navbar = () => {
               <h1>ETHER SUPPLY</h1>
               <p>{etherSupply}</p>
               {/* <p>btc 10</p> */}
-              <p>{updatedPriceDate}</p>
+              
             </div>
           </div>
         </div>
