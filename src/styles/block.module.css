@@ -78,6 +78,13 @@
         grid-template-columns: 2fr 5fr; 
         gap: 1rem;
     }
+      .box_header{
+        flex-direction: column;
+    }
+    .box_header h3{
+        width: 100%;
+
+    }
     
 
 }
