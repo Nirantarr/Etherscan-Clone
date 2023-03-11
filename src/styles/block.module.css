@@ -75,7 +75,8 @@
        display: none;
     }
     .dataRow{
-        grid-template-columns: 2fr 4fr; 
+        grid-template-columns: 2fr 5fr; 
+        gap: 1rem;
     }
     
 
